@@ -1,0 +1,67 @@
+intents:
+- greet
+- goodbye
+- thanks
+- deny
+- joke
+- switch
+- affirm
+- denial
+- expire
+
+
+entities:
+- switchType
+- response
+- duration
+- number
+- assetsType
+
+
+slots:
+  switchType:
+    type: text
+  response:
+    type: text
+  duration:
+    type: text
+  number:
+    type: float
+  assetsType:
+    type: text
+
+
+actions:
+- utter_switch
+- utter_thanks
+- utter_greet
+- utter_goodbye
+- utter_default
+- utter_expire
+- action_reset_slot
+
+
+templates:
+  utter_switch:
+  - text: "Switching to {switchType}."
+
+  utter_greet:
+  - text: "Hi, how can I help you?"
+
+  utter_goodbye:
+  - text: "See you soon!"
+
+  utter_thanks:
+  - text: "You're welcome. Anything else?"
+
+  utter_default:
+  - text: "Sorry didn't get you. Can you say that again?"
+
+  # utter_affirm_switch:
+  # - text: "Are you sure you want to switch {switchType}?"
+  #
+  # utter_cancel_switch:
+  # - text: "Switching to {switchType} cancelled."
+
+  utter_expire:
+  - text: "Sure, Getting {assetsType} expiring in {number} {duration}."

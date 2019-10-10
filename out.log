@@ -1,0 +1,592 @@
+Rasa process starting
+Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+From /Users/mangesh.mandlik/anaconda3/lib/python3.7/site-packages/tensorflow/python/ops/resource_variable_ops.py:435: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+From /Users/mangesh.mandlik/anaconda3/lib/python3.7/site-packages/tensorflow/python/keras/backend.py:4010: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+From /Users/mangesh.mandlik/anaconda3/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+Available web server routes: 
+hello                                              OPTIONS, GET, HEAD             /
+list_trackers                                      OPTIONS, GET, HEAD             /conversations
+execute_action                                     OPTIONS, POST                  /conversations/[sender_id]/execute
+log_message                                        OPTIONS, POST                  /conversations/[sender_id]/messages
+predict                                            OPTIONS, POST                  /conversations/[sender_id]/predict
+respond                                            OPTIONS, GET, POST, HEAD       /conversations/[sender_id]/respond
+retrieve_story                                     OPTIONS, GET, HEAD             /conversations/[sender_id]/story
+retrieve_tracker                                   OPTIONS, GET, HEAD             /conversations/[sender_id]/tracker
+replace_events                                     PUT, OPTIONS                   /conversations/[sender_id]/tracker/events
+get_domain                                         OPTIONS, GET, HEAD             /domain
+evaluate_stories                                   OPTIONS, POST                  /evaluate
+continue_training                                  OPTIONS, POST                  /finetune
+load_model                                         OPTIONS, POST                  /model
+parse                                              OPTIONS, POST                  /parse
+tracker_predict                                    OPTIONS, POST                  /predict
+static                                             OPTIONS, GET, HEAD             /static/[filename]
+status                                             OPTIONS, GET, HEAD             /status
+version                                            OPTIONS, GET, HEAD             /version
+custom_webhook_CmdlineInput.health                 OPTIONS, GET, HEAD             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                OPTIONS, POST                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+Received user message 'goodbye' with intent '{'name': 'goodbye', 'confidence': 0.8299829778115758}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	response: None
+	switchType: None
+Current tracker state [None, None, None, {}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}]
+There is a memorised next action '11'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_goodbye' with prob 1.00.
+Action 'utter_goodbye' ended with events '[]'
+Bot utterance 'BotUttered(text: See you soon!, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, {}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_utter_goodbye': 1.0, 'intent_goodbye': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hi' with intent '{'name': 'greet', 'confidence': 0.9251957958946558}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+	response: None
+	switchType: None
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_utter_goodbye': 1.0, 'intent_goodbye': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_greet' with prob 0.99.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Hi, how can I help?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_utter_goodbye': 1.0, 'intent_goodbye': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+From /Users/mangesh.mandlik/anaconda3/lib/python3.7/site-packages/tensorflow/python/ops/resource_variable_ops.py:435: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+From /Users/mangesh.mandlik/anaconda3/lib/python3.7/site-packages/tensorflow/python/keras/backend.py:4010: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+From /Users/mangesh.mandlik/anaconda3/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+Available web server routes: 
+hello                                              GET, HEAD, OPTIONS             /
+list_trackers                                      GET, HEAD, OPTIONS             /conversations
+execute_action                                     OPTIONS, POST                  /conversations/[sender_id]/execute
+log_message                                        OPTIONS, POST                  /conversations/[sender_id]/messages
+predict                                            OPTIONS, POST                  /conversations/[sender_id]/predict
+respond                                            GET, HEAD, OPTIONS, POST       /conversations/[sender_id]/respond
+retrieve_story                                     GET, HEAD, OPTIONS             /conversations/[sender_id]/story
+retrieve_tracker                                   GET, HEAD, OPTIONS             /conversations/[sender_id]/tracker
+replace_events                                     OPTIONS, PUT                   /conversations/[sender_id]/tracker/events
+get_domain                                         GET, HEAD, OPTIONS             /domain
+evaluate_stories                                   OPTIONS, POST                  /evaluate
+continue_training                                  OPTIONS, POST                  /finetune
+load_model                                         OPTIONS, POST                  /model
+parse                                              OPTIONS, POST                  /parse
+tracker_predict                                    OPTIONS, POST                  /predict
+static                                             GET, HEAD, OPTIONS             /static/[filename]
+status                                             GET, HEAD, OPTIONS             /status
+version                                            GET, HEAD, OPTIONS             /version
+custom_webhook_CmdlineInput.health                 GET, HEAD, OPTIONS             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                OPTIONS, POST                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+From /Users/mangesh.mandlik/anaconda3/lib/python3.7/site-packages/tensorflow/python/ops/resource_variable_ops.py:435: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+From /Users/mangesh.mandlik/anaconda3/lib/python3.7/site-packages/tensorflow/python/keras/backend.py:4010: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+From /Users/mangesh.mandlik/anaconda3/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+Available web server routes: 
+hello                                              HEAD, OPTIONS, GET             /
+list_trackers                                      HEAD, OPTIONS, GET             /conversations
+execute_action                                     POST, OPTIONS                  /conversations/[sender_id]/execute
+log_message                                        POST, OPTIONS                  /conversations/[sender_id]/messages
+predict                                            POST, OPTIONS                  /conversations/[sender_id]/predict
+respond                                            HEAD, POST, OPTIONS, GET       /conversations/[sender_id]/respond
+retrieve_story                                     HEAD, OPTIONS, GET             /conversations/[sender_id]/story
+retrieve_tracker                                   HEAD, OPTIONS, GET             /conversations/[sender_id]/tracker
+replace_events                                     PUT, OPTIONS                   /conversations/[sender_id]/tracker/events
+get_domain                                         HEAD, OPTIONS, GET             /domain
+evaluate_stories                                   POST, OPTIONS                  /evaluate
+continue_training                                  POST, OPTIONS                  /finetune
+load_model                                         POST, OPTIONS                  /model
+parse                                              POST, OPTIONS                  /parse
+tracker_predict                                    POST, OPTIONS                  /predict
+static                                             HEAD, OPTIONS, GET             /static/[filename]
+status                                             HEAD, OPTIONS, GET             /status
+version                                            HEAD, OPTIONS, GET             /version
+custom_webhook_CmdlineInput.health                 HEAD, OPTIONS, GET             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+Received user message 'bye' with intent '{'name': 'goodbye', 'confidence': 0.7290320230192763}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	duration: None
+	number: None
+	response: None
+	switchType: None
+Current tracker state [None, None, None, {}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}]
+There is a memorised next action '11'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_goodbye' with prob 1.00.
+Action 'utter_goodbye' ended with events '[]'
+Bot utterance 'BotUttered(text: See you soon!, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, {}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_utter_goodbye': 1.0, 'intent_goodbye': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hi' with intent '{'name': 'greet', 'confidence': 0.849201789671623}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+	duration: None
+	number: None
+	response: None
+	switchType: None
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_utter_goodbye': 1.0, 'intent_goodbye': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Hi, how can I help?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_utter_goodbye': 1.0, 'intent_goodbye': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+From /Users/mangesh.mandlik/anaconda3/lib/python3.7/site-packages/tensorflow/python/ops/resource_variable_ops.py:435: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+From /Users/mangesh.mandlik/anaconda3/lib/python3.7/site-packages/tensorflow/python/keras/backend.py:4010: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+From /Users/mangesh.mandlik/anaconda3/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+Available web server routes: 
+hello                                              HEAD, OPTIONS, GET             /
+list_trackers                                      HEAD, OPTIONS, GET             /conversations
+execute_action                                     POST, OPTIONS                  /conversations/[sender_id]/execute
+log_message                                        POST, OPTIONS                  /conversations/[sender_id]/messages
+predict                                            POST, OPTIONS                  /conversations/[sender_id]/predict
+respond                                            POST, HEAD, OPTIONS, GET       /conversations/[sender_id]/respond
+retrieve_story                                     HEAD, OPTIONS, GET             /conversations/[sender_id]/story
+retrieve_tracker                                   HEAD, OPTIONS, GET             /conversations/[sender_id]/tracker
+replace_events                                     OPTIONS, PUT                   /conversations/[sender_id]/tracker/events
+get_domain                                         HEAD, OPTIONS, GET             /domain
+evaluate_stories                                   POST, OPTIONS                  /evaluate
+continue_training                                  POST, OPTIONS                  /finetune
+load_model                                         POST, OPTIONS                  /model
+parse                                              POST, OPTIONS                  /parse
+tracker_predict                                    POST, OPTIONS                  /predict
+static                                             HEAD, OPTIONS, GET             /static/[filename]
+status                                             HEAD, OPTIONS, GET             /status
+version                                            HEAD, OPTIONS, GET             /version
+custom_webhook_CmdlineInput.health                 HEAD, OPTIONS, GET             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+Received user message 'hi' with intent '{'name': 'greet', 'confidence': 0.849201789671623}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	duration: None
+	number: None
+	response: None
+	switchType: None
+Current tracker state [None, None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '10'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Hi, how can I help?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'ye' with intent '{'name': 'greet', 'confidence': 0.33388403111569154}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+	duration: None
+	number: None
+	response: None
+	switchType: None
+NLU confidence 0.33388403111569154 is lower than NLU threshold 0.5. 
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: Sorry didn't get you. Can you say that again?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'give me assets expiring in 1 day' with intent '{'name': 'expire', 'confidence': 0.8149372789459639}' and entities '[{'start': 27, 'end': 28, 'value': '1', 'entity': 'number', 'confidence': 0.9689344928986077, 'extractor': 'CRFEntityExtractor'}, {'start': 29, 'end': 32, 'value': 'day', 'entity': 'duration', 'confidence': 0.9561587555760198, 'extractor': 'CRFEntityExtractor'}]'
+Logged UserUtterance - tracker now has 13 events
+Current slot values: 
+	duration: day
+	number: 1
+	response: None
+	switchType: None
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'entity_duration': 1.0, 'slot_duration_0': 1.0, 'entity_number': 1.0, 'slot_number_0': 1.0, 'intent_expire': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_expire' with prob 1.00.
+Action 'utter_expire' ended with events '[]'
+Bot utterance 'BotUttered(text: Sure, Getting assets expiring in 1 day., data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'entity_duration': 1.0, 'slot_duration_0': 1.0, 'entity_number': 1.0, 'slot_number_0': 1.0, 'intent_expire': 1.0}, {'prev_utter_expire': 1.0, 'entity_duration': 1.0, 'slot_duration_0': 1.0, 'entity_number': 1.0, 'slot_number_0': 1.0, 'intent_expire': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'switch to marketing activities' with intent '{'name': 'switch', 'confidence': 0.8962127314648572}' and entities '[{'start': 10, 'end': 30, 'value': 'marketing activities', 'entity': 'switchType', 'confidence': 0.9885646112268139, 'extractor': 'CRFEntityExtractor'}]'
+Logged UserUtterance - tracker now has 18 events
+Current slot values: 
+	duration: day
+	number: 1
+	response: None
+	switchType: marketing activities
+Current tracker state [{'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'entity_duration': 1.0, 'slot_duration_0': 1.0, 'entity_number': 1.0, 'slot_number_0': 1.0, 'intent_expire': 1.0}, {'prev_utter_expire': 1.0, 'entity_duration': 1.0, 'slot_duration_0': 1.0, 'entity_number': 1.0, 'slot_number_0': 1.0, 'intent_expire': 1.0}, {'slot_switchType_0': 1.0, 'prev_action_listen': 1.0, 'slot_duration_0': 1.0, 'intent_switch': 1.0, 'slot_number_0': 1.0, 'entity_switchType': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_affirm_switch' with prob 0.53.
+Action 'utter_affirm_switch' ended with events '[]'
+Bot utterance 'BotUttered(text: Are you sure you want to switch marketing activities?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'entity_duration': 1.0, 'slot_duration_0': 1.0, 'entity_number': 1.0, 'slot_number_0': 1.0, 'intent_expire': 1.0}, {'prev_utter_expire': 1.0, 'entity_duration': 1.0, 'slot_duration_0': 1.0, 'entity_number': 1.0, 'slot_number_0': 1.0, 'intent_expire': 1.0}, {'slot_switchType_0': 1.0, 'prev_action_listen': 1.0, 'slot_duration_0': 1.0, 'intent_switch': 1.0, 'slot_number_0': 1.0, 'entity_switchType': 1.0}, {'slot_switchType_0': 1.0, 'prev_utter_affirm_switch': 1.0, 'slot_duration_0': 1.0, 'intent_switch': 1.0, 'slot_number_0': 1.0, 'entity_switchType': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'yes' with intent '{'name': 'affirm', 'confidence': 0.783645567961333}' and entities '[{'start': 0, 'end': 3, 'value': 'yes', 'entity': 'response', 'confidence': 0.7357117877797109, 'extractor': 'CRFEntityExtractor'}]'
+Logged UserUtterance - tracker now has 23 events
+Current slot values: 
+	duration: day
+	number: 1
+	response: yes
+	switchType: marketing activities
+Current tracker state [{'prev_action_listen': 1.0, 'entity_duration': 1.0, 'slot_duration_0': 1.0, 'entity_number': 1.0, 'slot_number_0': 1.0, 'intent_expire': 1.0}, {'prev_utter_expire': 1.0, 'entity_duration': 1.0, 'slot_duration_0': 1.0, 'entity_number': 1.0, 'slot_number_0': 1.0, 'intent_expire': 1.0}, {'slot_switchType_0': 1.0, 'prev_action_listen': 1.0, 'slot_duration_0': 1.0, 'intent_switch': 1.0, 'slot_number_0': 1.0, 'entity_switchType': 1.0}, {'slot_switchType_0': 1.0, 'prev_utter_affirm_switch': 1.0, 'slot_duration_0': 1.0, 'intent_switch': 1.0, 'slot_number_0': 1.0, 'entity_switchType': 1.0}, {'slot_switchType_0': 1.0, 'prev_action_listen': 1.0, 'intent_affirm': 1.0, 'slot_response_0': 1.0, 'entity_response': 1.0, 'slot_duration_0': 1.0, 'slot_number_0': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_reset_slot' with prob 1.00.
+Encountered an exception while running action 'action_reset_slot'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+The model predicted the custom action 'action_reset_slot' but you didn't configure an endpoint to run this custom action. Please take a look at the docs and set an endpoint configuration. https://legacy-docs.rasa.com/docs/core/customactions/
+Traceback (most recent call last):
+  File "/Users/mangesh.mandlik/anaconda3/lib/python3.7/site-packages/rasa_core/processor.py", line 345, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/Users/mangesh.mandlik/anaconda3/lib/python3.7/site-packages/rasa_core/actions/action.py", line 341, in run
+    "".format(self.name(), DOCS_BASE_URL))
+Exception: The model predicted the custom action 'action_reset_slot' but you didn't configure an endpoint to run this custom action. Please take a look at the docs and set an endpoint configuration. https://legacy-docs.rasa.com/docs/core/customactions/
+Action 'action_reset_slot' ended with events '[]'
+Current tracker state [{'prev_utter_expire': 1.0, 'entity_duration': 1.0, 'slot_duration_0': 1.0, 'entity_number': 1.0, 'slot_number_0': 1.0, 'intent_expire': 1.0}, {'slot_switchType_0': 1.0, 'prev_action_listen': 1.0, 'slot_duration_0': 1.0, 'intent_switch': 1.0, 'slot_number_0': 1.0, 'entity_switchType': 1.0}, {'slot_switchType_0': 1.0, 'prev_utter_affirm_switch': 1.0, 'slot_duration_0': 1.0, 'intent_switch': 1.0, 'slot_number_0': 1.0, 'entity_switchType': 1.0}, {'slot_switchType_0': 1.0, 'prev_action_listen': 1.0, 'intent_affirm': 1.0, 'slot_response_0': 1.0, 'entity_response': 1.0, 'slot_duration_0': 1.0, 'slot_number_0': 1.0}, {'slot_switchType_0': 1.0, 'intent_affirm': 1.0, 'prev_action_reset_slot': 1.0, 'slot_response_0': 1.0, 'entity_response': 1.0, 'slot_duration_0': 1.0, 'slot_number_0': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_switch' with prob 0.99.
+Action 'utter_switch' ended with events '[]'
+Bot utterance 'BotUttered(text: Switching to marketing activities., data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'slot_switchType_0': 1.0, 'prev_action_listen': 1.0, 'slot_duration_0': 1.0, 'intent_switch': 1.0, 'slot_number_0': 1.0, 'entity_switchType': 1.0}, {'slot_switchType_0': 1.0, 'prev_utter_affirm_switch': 1.0, 'slot_duration_0': 1.0, 'intent_switch': 1.0, 'slot_number_0': 1.0, 'entity_switchType': 1.0}, {'slot_switchType_0': 1.0, 'prev_action_listen': 1.0, 'intent_affirm': 1.0, 'slot_response_0': 1.0, 'entity_response': 1.0, 'slot_duration_0': 1.0, 'slot_number_0': 1.0}, {'slot_switchType_0': 1.0, 'intent_affirm': 1.0, 'prev_action_reset_slot': 1.0, 'slot_response_0': 1.0, 'entity_response': 1.0, 'slot_duration_0': 1.0, 'slot_number_0': 1.0}, {'slot_switchType_0': 1.0, 'intent_affirm': 1.0, 'slot_response_0': 1.0, 'entity_response': 1.0, 'slot_duration_0': 1.0, 'prev_utter_switch': 1.0, 'slot_number_0': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hi' with intent '{'name': 'greet', 'confidence': 0.849201789671623}' and entities '[]'
+Logged UserUtterance - tracker now has 28 events
+Current slot values: 
+	duration: day
+	number: 1
+	response: yes
+	switchType: marketing activities
+Current tracker state [{'slot_switchType_0': 1.0, 'prev_utter_affirm_switch': 1.0, 'slot_duration_0': 1.0, 'intent_switch': 1.0, 'slot_number_0': 1.0, 'entity_switchType': 1.0}, {'slot_switchType_0': 1.0, 'prev_action_listen': 1.0, 'intent_affirm': 1.0, 'slot_response_0': 1.0, 'entity_response': 1.0, 'slot_duration_0': 1.0, 'slot_number_0': 1.0}, {'slot_switchType_0': 1.0, 'intent_affirm': 1.0, 'prev_action_reset_slot': 1.0, 'slot_response_0': 1.0, 'entity_response': 1.0, 'slot_duration_0': 1.0, 'slot_number_0': 1.0}, {'slot_switchType_0': 1.0, 'intent_affirm': 1.0, 'slot_response_0': 1.0, 'entity_response': 1.0, 'slot_duration_0': 1.0, 'prev_utter_switch': 1.0, 'slot_number_0': 1.0}, {'slot_switchType_0': 1.0, 'prev_action_listen': 1.0, 'slot_response_0': 1.0, 'slot_duration_0': 1.0, 'slot_number_0': 1.0, 'intent_greet': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Hi, how can I help?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'slot_switchType_0': 1.0, 'prev_action_listen': 1.0, 'intent_affirm': 1.0, 'slot_response_0': 1.0, 'entity_response': 1.0, 'slot_duration_0': 1.0, 'slot_number_0': 1.0}, {'slot_switchType_0': 1.0, 'intent_affirm': 1.0, 'prev_action_reset_slot': 1.0, 'slot_response_0': 1.0, 'entity_response': 1.0, 'slot_duration_0': 1.0, 'slot_number_0': 1.0}, {'slot_switchType_0': 1.0, 'intent_affirm': 1.0, 'slot_response_0': 1.0, 'entity_response': 1.0, 'slot_duration_0': 1.0, 'prev_utter_switch': 1.0, 'slot_number_0': 1.0}, {'slot_switchType_0': 1.0, 'prev_action_listen': 1.0, 'slot_response_0': 1.0, 'slot_duration_0': 1.0, 'slot_number_0': 1.0, 'intent_greet': 1.0}, {'slot_switchType_0': 1.0, 'prev_utter_greet': 1.0, 'slot_response_0': 1.0, 'slot_duration_0': 1.0, 'slot_number_0': 1.0, 'intent_greet': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'provide me campaign details' with intent '{'name': 'thanks', 'confidence': 0.3146096949107549}' and entities '[]'
+Logged UserUtterance - tracker now has 32 events
+Current slot values: 
+	duration: day
+	number: 1
+	response: yes
+	switchType: marketing activities
+NLU confidence 0.3146096949107549 is lower than NLU threshold 0.5. 
+Current tracker state [{'slot_switchType_0': 1.0, 'intent_affirm': 1.0, 'prev_action_reset_slot': 1.0, 'slot_response_0': 1.0, 'entity_response': 1.0, 'slot_duration_0': 1.0, 'slot_number_0': 1.0}, {'slot_switchType_0': 1.0, 'intent_affirm': 1.0, 'slot_response_0': 1.0, 'entity_response': 1.0, 'slot_duration_0': 1.0, 'prev_utter_switch': 1.0, 'slot_number_0': 1.0}, {'slot_switchType_0': 1.0, 'prev_action_listen': 1.0, 'slot_response_0': 1.0, 'slot_duration_0': 1.0, 'slot_number_0': 1.0, 'intent_greet': 1.0}, {'slot_switchType_0': 1.0, 'prev_utter_greet': 1.0, 'slot_response_0': 1.0, 'slot_duration_0': 1.0, 'slot_number_0': 1.0, 'intent_greet': 1.0}, {'slot_switchType_0': 1.0, 'prev_action_listen': 1.0, 'slot_response_0': 1.0, 'slot_duration_0': 1.0, 'intent_thanks': 1.0, 'slot_number_0': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: Sorry didn't get you. Can you say that again?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'slot_switchType_0': 1.0, 'prev_action_listen': 1.0, 'intent_affirm': 1.0, 'slot_response_0': 1.0, 'entity_response': 1.0, 'slot_duration_0': 1.0, 'slot_number_0': 1.0}, {'slot_switchType_0': 1.0, 'intent_affirm': 1.0, 'prev_action_reset_slot': 1.0, 'slot_response_0': 1.0, 'entity_response': 1.0, 'slot_duration_0': 1.0, 'slot_number_0': 1.0}, {'slot_switchType_0': 1.0, 'intent_affirm': 1.0, 'slot_response_0': 1.0, 'entity_response': 1.0, 'slot_duration_0': 1.0, 'prev_utter_switch': 1.0, 'slot_number_0': 1.0}, {'slot_switchType_0': 1.0, 'prev_action_listen': 1.0, 'slot_response_0': 1.0, 'slot_duration_0': 1.0, 'slot_number_0': 1.0, 'intent_greet': 1.0}, {'slot_switchType_0': 1.0, 'prev_utter_greet': 1.0, 'slot_response_0': 1.0, 'slot_duration_0': 1.0, 'slot_number_0': 1.0, 'intent_greet': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'provide me aseets expiring in 1 week' with intent '{'name': 'expire', 'confidence': 0.6983707619722146}' and entities '[{'start': 30, 'end': 31, 'value': '1', 'entity': 'number', 'confidence': 0.9764544486124737, 'extractor': 'CRFEntityExtractor'}, {'start': 32, 'end': 36, 'value': 'week', 'entity': 'duration', 'confidence': 0.9704970226313817, 'extractor': 'CRFEntityExtractor'}]'
+Logged UserUtterance - tracker now has 39 events
+Current slot values: 
+	duration: week
+	number: 1
+	response: yes
+	switchType: marketing activities
+Current tracker state [{'slot_switchType_0': 1.0, 'intent_affirm': 1.0, 'prev_action_reset_slot': 1.0, 'slot_response_0': 1.0, 'entity_response': 1.0, 'slot_duration_0': 1.0, 'slot_number_0': 1.0}, {'slot_switchType_0': 1.0, 'intent_affirm': 1.0, 'slot_response_0': 1.0, 'entity_response': 1.0, 'slot_duration_0': 1.0, 'prev_utter_switch': 1.0, 'slot_number_0': 1.0}, {'slot_switchType_0': 1.0, 'prev_action_listen': 1.0, 'slot_response_0': 1.0, 'slot_duration_0': 1.0, 'slot_number_0': 1.0, 'intent_greet': 1.0}, {'slot_switchType_0': 1.0, 'prev_utter_greet': 1.0, 'slot_response_0': 1.0, 'slot_duration_0': 1.0, 'slot_number_0': 1.0, 'intent_greet': 1.0}, {'slot_switchType_0': 1.0, 'prev_action_listen': 1.0, 'entity_duration': 1.0, 'slot_response_0': 1.0, 'slot_duration_0': 1.0, 'entity_number': 1.0, 'slot_number_0': 1.0, 'intent_expire': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_expire' with prob 1.00.
+Action 'utter_expire' ended with events '[]'
+Bot utterance 'BotUttered(text: Sure, Getting assets expiring in 1 week., data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'slot_switchType_0': 1.0, 'intent_affirm': 1.0, 'slot_response_0': 1.0, 'entity_response': 1.0, 'slot_duration_0': 1.0, 'prev_utter_switch': 1.0, 'slot_number_0': 1.0}, {'slot_switchType_0': 1.0, 'prev_action_listen': 1.0, 'slot_response_0': 1.0, 'slot_duration_0': 1.0, 'slot_number_0': 1.0, 'intent_greet': 1.0}, {'slot_switchType_0': 1.0, 'prev_utter_greet': 1.0, 'slot_response_0': 1.0, 'slot_duration_0': 1.0, 'slot_number_0': 1.0, 'intent_greet': 1.0}, {'slot_switchType_0': 1.0, 'prev_action_listen': 1.0, 'entity_duration': 1.0, 'slot_response_0': 1.0, 'slot_duration_0': 1.0, 'entity_number': 1.0, 'slot_number_0': 1.0, 'intent_expire': 1.0}, {'slot_switchType_0': 1.0, 'prev_utter_expire': 1.0, 'entity_duration': 1.0, 'slot_response_0': 1.0, 'slot_duration_0': 1.0, 'entity_number': 1.0, 'slot_number_0': 1.0, 'intent_expire': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+From /Users/mangesh.mandlik/anaconda3/lib/python3.7/site-packages/tensorflow/python/ops/resource_variable_ops.py:435: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+From /Users/mangesh.mandlik/anaconda3/lib/python3.7/site-packages/tensorflow/python/keras/backend.py:4010: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+From /Users/mangesh.mandlik/anaconda3/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+Available web server routes: 
+hello                                              OPTIONS, GET, HEAD             /
+list_trackers                                      OPTIONS, GET, HEAD             /conversations
+execute_action                                     POST, OPTIONS                  /conversations/[sender_id]/execute
+log_message                                        POST, OPTIONS                  /conversations/[sender_id]/messages
+predict                                            POST, OPTIONS                  /conversations/[sender_id]/predict
+respond                                            POST, OPTIONS, GET, HEAD       /conversations/[sender_id]/respond
+retrieve_story                                     OPTIONS, GET, HEAD             /conversations/[sender_id]/story
+retrieve_tracker                                   OPTIONS, GET, HEAD             /conversations/[sender_id]/tracker
+replace_events                                     OPTIONS, PUT                   /conversations/[sender_id]/tracker/events
+get_domain                                         OPTIONS, GET, HEAD             /domain
+evaluate_stories                                   POST, OPTIONS                  /evaluate
+continue_training                                  POST, OPTIONS                  /finetune
+load_model                                         POST, OPTIONS                  /model
+parse                                              POST, OPTIONS                  /parse
+tracker_predict                                    POST, OPTIONS                  /predict
+static                                             OPTIONS, GET, HEAD             /static/[filename]
+status                                             OPTIONS, GET, HEAD             /status
+version                                            OPTIONS, GET, HEAD             /version
+custom_webhook_CmdlineInput.health                 OPTIONS, GET, HEAD             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+Received user message 'provide me aseets expiring in 1 week' with intent '{'name': 'expire', 'confidence': 0.6983707619722146}' and entities '[{'start': 30, 'end': 31, 'value': '1', 'entity': 'number', 'confidence': 0.9764544486124737, 'extractor': 'CRFEntityExtractor'}, {'start': 32, 'end': 36, 'value': 'week', 'entity': 'duration', 'confidence': 0.9704970226313817, 'extractor': 'CRFEntityExtractor'}]'
+Logged UserUtterance - tracker now has 4 events
+Current slot values: 
+	duration: week
+	number: 1
+	response: None
+	switchType: None
+Current tracker state [None, None, None, {}, {'intent_expire': 1.0, 'slot_duration_0': 1.0, 'entity_duration': 1.0, 'prev_action_listen': 1.0, 'slot_number_0': 1.0, 'entity_number': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_expire' with prob 1.00.
+Action 'utter_expire' ended with events '[]'
+Bot utterance 'BotUttered(text: Sure, Getting assets expiring in 1 week., data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, {}, {'intent_expire': 1.0, 'slot_duration_0': 1.0, 'entity_duration': 1.0, 'prev_action_listen': 1.0, 'slot_number_0': 1.0, 'entity_number': 1.0}, {'intent_expire': 1.0, 'slot_duration_0': 1.0, 'entity_duration': 1.0, 'slot_number_0': 1.0, 'prev_utter_expire': 1.0, 'entity_number': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'provide me aseets expiring in 1 hour' with intent '{'name': 'expire', 'confidence': 0.6772542687620035}' and entities '[{'start': 30, 'end': 31, 'value': '1', 'entity': 'number', 'confidence': 0.9754749788619683, 'extractor': 'CRFEntityExtractor'}, {'start': 32, 'end': 36, 'value': 'hour', 'entity': 'duration', 'confidence': 0.9695339454757261, 'extractor': 'CRFEntityExtractor'}]'
+Logged UserUtterance - tracker now has 10 events
+Current slot values: 
+	duration: hour
+	number: 1
+	response: None
+	switchType: None
+Current tracker state [None, {}, {'intent_expire': 1.0, 'slot_duration_0': 1.0, 'entity_duration': 1.0, 'prev_action_listen': 1.0, 'slot_number_0': 1.0, 'entity_number': 1.0}, {'intent_expire': 1.0, 'slot_duration_0': 1.0, 'entity_duration': 1.0, 'slot_number_0': 1.0, 'prev_utter_expire': 1.0, 'entity_number': 1.0}, {'intent_expire': 1.0, 'slot_duration_0': 1.0, 'entity_duration': 1.0, 'prev_action_listen': 1.0, 'slot_number_0': 1.0, 'entity_number': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_expire' with prob 1.00.
+Action 'utter_expire' ended with events '[]'
+Bot utterance 'BotUttered(text: Sure, Getting assets expiring in 1 hour., data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{}, {'intent_expire': 1.0, 'slot_duration_0': 1.0, 'entity_duration': 1.0, 'prev_action_listen': 1.0, 'slot_number_0': 1.0, 'entity_number': 1.0}, {'intent_expire': 1.0, 'slot_duration_0': 1.0, 'entity_duration': 1.0, 'slot_number_0': 1.0, 'prev_utter_expire': 1.0, 'entity_number': 1.0}, {'intent_expire': 1.0, 'slot_duration_0': 1.0, 'entity_duration': 1.0, 'prev_action_listen': 1.0, 'slot_number_0': 1.0, 'entity_number': 1.0}, {'intent_expire': 1.0, 'slot_duration_0': 1.0, 'entity_duration': 1.0, 'slot_number_0': 1.0, 'prev_utter_expire': 1.0, 'entity_number': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'provide me aseets expiring in 1 day' with intent '{'name': 'expire', 'confidence': 0.6799991442748421}' and entities '[{'start': 30, 'end': 31, 'value': '1', 'entity': 'number', 'confidence': 0.9689345963306206, 'extractor': 'CRFEntityExtractor'}, {'start': 32, 'end': 35, 'value': 'day', 'entity': 'duration', 'confidence': 0.956158859978253, 'extractor': 'CRFEntityExtractor'}]'
+Logged UserUtterance - tracker now has 16 events
+Current slot values: 
+	duration: day
+	number: 1
+	response: None
+	switchType: None
+Current tracker state [{'intent_expire': 1.0, 'slot_duration_0': 1.0, 'entity_duration': 1.0, 'prev_action_listen': 1.0, 'slot_number_0': 1.0, 'entity_number': 1.0}, {'intent_expire': 1.0, 'slot_duration_0': 1.0, 'entity_duration': 1.0, 'slot_number_0': 1.0, 'prev_utter_expire': 1.0, 'entity_number': 1.0}, {'intent_expire': 1.0, 'slot_duration_0': 1.0, 'entity_duration': 1.0, 'prev_action_listen': 1.0, 'slot_number_0': 1.0, 'entity_number': 1.0}, {'intent_expire': 1.0, 'slot_duration_0': 1.0, 'entity_duration': 1.0, 'slot_number_0': 1.0, 'prev_utter_expire': 1.0, 'entity_number': 1.0}, {'intent_expire': 1.0, 'slot_duration_0': 1.0, 'entity_duration': 1.0, 'prev_action_listen': 1.0, 'slot_number_0': 1.0, 'entity_number': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_expire' with prob 1.00.
+Action 'utter_expire' ended with events '[]'
+Bot utterance 'BotUttered(text: Sure, Getting assets expiring in 1 day., data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_expire': 1.0, 'slot_duration_0': 1.0, 'entity_duration': 1.0, 'slot_number_0': 1.0, 'prev_utter_expire': 1.0, 'entity_number': 1.0}, {'intent_expire': 1.0, 'slot_duration_0': 1.0, 'entity_duration': 1.0, 'prev_action_listen': 1.0, 'slot_number_0': 1.0, 'entity_number': 1.0}, {'intent_expire': 1.0, 'slot_duration_0': 1.0, 'entity_duration': 1.0, 'slot_number_0': 1.0, 'prev_utter_expire': 1.0, 'entity_number': 1.0}, {'intent_expire': 1.0, 'slot_duration_0': 1.0, 'entity_duration': 1.0, 'prev_action_listen': 1.0, 'slot_number_0': 1.0, 'entity_number': 1.0}, {'intent_expire': 1.0, 'slot_duration_0': 1.0, 'entity_duration': 1.0, 'slot_number_0': 1.0, 'prev_utter_expire': 1.0, 'entity_number': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'provide me aseets expiring in 1 year' with intent '{'name': 'expire', 'confidence': 0.6761287813767521}' and entities '[{'start': 30, 'end': 31, 'value': '1', 'entity': 'number', 'confidence': 0.6063434530583316, 'extractor': 'CRFEntityExtractor'}, {'start': 32, 'end': 36, 'value': 'year', 'entity': 'duration', 'confidence': 0.46284254048316037, 'extractor': 'CRFEntityExtractor'}]'
+Logged UserUtterance - tracker now has 22 events
+Current slot values: 
+	duration: year
+	number: 1
+	response: None
+	switchType: None
+Current tracker state [{'intent_expire': 1.0, 'slot_duration_0': 1.0, 'entity_duration': 1.0, 'prev_action_listen': 1.0, 'slot_number_0': 1.0, 'entity_number': 1.0}, {'intent_expire': 1.0, 'slot_duration_0': 1.0, 'entity_duration': 1.0, 'slot_number_0': 1.0, 'prev_utter_expire': 1.0, 'entity_number': 1.0}, {'intent_expire': 1.0, 'slot_duration_0': 1.0, 'entity_duration': 1.0, 'prev_action_listen': 1.0, 'slot_number_0': 1.0, 'entity_number': 1.0}, {'intent_expire': 1.0, 'slot_duration_0': 1.0, 'entity_duration': 1.0, 'slot_number_0': 1.0, 'prev_utter_expire': 1.0, 'entity_number': 1.0}, {'intent_expire': 1.0, 'slot_duration_0': 1.0, 'entity_duration': 1.0, 'prev_action_listen': 1.0, 'slot_number_0': 1.0, 'entity_number': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_expire' with prob 1.00.
+Action 'utter_expire' ended with events '[]'
+Bot utterance 'BotUttered(text: Sure, Getting assets expiring in 1 year., data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_expire': 1.0, 'slot_duration_0': 1.0, 'entity_duration': 1.0, 'slot_number_0': 1.0, 'prev_utter_expire': 1.0, 'entity_number': 1.0}, {'intent_expire': 1.0, 'slot_duration_0': 1.0, 'entity_duration': 1.0, 'prev_action_listen': 1.0, 'slot_number_0': 1.0, 'entity_number': 1.0}, {'intent_expire': 1.0, 'slot_duration_0': 1.0, 'entity_duration': 1.0, 'slot_number_0': 1.0, 'prev_utter_expire': 1.0, 'entity_number': 1.0}, {'intent_expire': 1.0, 'slot_duration_0': 1.0, 'entity_duration': 1.0, 'prev_action_listen': 1.0, 'slot_number_0': 1.0, 'entity_number': 1.0}, {'intent_expire': 1.0, 'slot_duration_0': 1.0, 'entity_duration': 1.0, 'slot_number_0': 1.0, 'prev_utter_expire': 1.0, 'entity_number': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
