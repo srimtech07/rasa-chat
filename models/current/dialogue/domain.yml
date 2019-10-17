@@ -1,0 +1,75 @@
+%YAML 1.1
+---
+actions:
+- utter_switch
+- utter_thanks
+- utter_greet
+- utter_goodbye
+- utter_default
+- utter_expire
+- utter_affirm_switch
+- utter_cancel_switch
+- action_reset_slot
+config:
+  store_entities_as_slots: true
+entities:
+- switchType
+- response
+- duration
+- number
+forms: []
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- thanks:
+    use_entities: true
+- deny:
+    use_entities: true
+- joke:
+    use_entities: true
+- switch:
+    use_entities: true
+- affirm:
+    use_entities: true
+- denial:
+    use_entities: true
+- expire:
+    use_entities: true
+slots:
+  duration:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  number:
+    auto_fill: true
+    initial_value: null
+    max_value: 1.0
+    min_value: 0.0
+    type: rasa_core.slots.FloatSlot
+  response:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  switchType:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_affirm_switch:
+  - text: Are you sure you want to switch {switchType}?
+  utter_cancel_switch:
+  - text: Switching to {switchType} cancelled.
+  utter_default:
+  - text: Sorry didn't get you. Can you say that again?
+  utter_expire:
+  - text: Sure, Getting assets expiring in {number} {duration}.
+  utter_goodbye:
+  - text: See you soon!
+  utter_greet:
+  - text: Hi, how can I help?
+  utter_switch:
+  - text: Switching to {switchType}.
+  utter_thanks:
+  - text: You're welcome. Anything else?

@@ -1,0 +1,505 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "goodbye",
+        "text": "Bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Goodbye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "See you later"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Bye bot"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Goodbye friend"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye for now"
+      },
+      {
+        "intent": "goodbye",
+        "text": "catch you later"
+      },
+      {
+        "intent": "goodbye",
+        "text": "gotta go"
+      },
+      {
+        "intent": "goodbye",
+        "text": "See you"
+      },
+      {
+        "intent": "goodbye",
+        "text": "goodnight"
+      },
+      {
+        "intent": "goodbye",
+        "text": "have a nice day"
+      },
+      {
+        "intent": "goodbye",
+        "text": "i'm off"
+      },
+      {
+        "intent": "goodbye",
+        "text": "see you later alligator"
+      },
+      {
+        "intent": "goodbye",
+        "text": "we'll speak soon"
+      },
+      {
+        "intent": "greet",
+        "text": "Hi"
+      },
+      {
+        "intent": "greet",
+        "text": "Hey"
+      },
+      {
+        "intent": "greet",
+        "text": "Hi bot"
+      },
+      {
+        "intent": "greet",
+        "text": "Hey bot"
+      },
+      {
+        "intent": "greet",
+        "text": "Hello"
+      },
+      {
+        "intent": "greet",
+        "text": "Good morning"
+      },
+      {
+        "intent": "greet",
+        "text": "hi again"
+      },
+      {
+        "intent": "greet",
+        "text": "hi folks"
+      },
+      {
+        "intent": "greet",
+        "text": "hi Mister"
+      },
+      {
+        "intent": "greet",
+        "text": "hi pal!"
+      },
+      {
+        "intent": "greet",
+        "text": "hi there"
+      },
+      {
+        "intent": "greet",
+        "text": "greetings"
+      },
+      {
+        "intent": "greet",
+        "text": "hello everybody"
+      },
+      {
+        "intent": "greet",
+        "text": "hello is anybody there"
+      },
+      {
+        "intent": "greet",
+        "text": "hello robot"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thanks"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thank you"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thank you so much"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thanks bot"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thanks for that"
+      },
+      {
+        "intent": "thanks",
+        "text": "cheers"
+      },
+      {
+        "intent": "thanks",
+        "text": "cheers bro"
+      },
+      {
+        "intent": "thanks",
+        "text": "ok thanks!"
+      },
+      {
+        "intent": "thanks",
+        "text": "perfect thank you"
+      },
+      {
+        "intent": "thanks",
+        "text": "thanks a bunch for everything"
+      },
+      {
+        "intent": "thanks",
+        "text": "thanks for the help"
+      },
+      {
+        "intent": "thanks",
+        "text": "thanks a lot"
+      },
+      {
+        "intent": "thanks",
+        "text": "amazing, thanks"
+      },
+      {
+        "intent": "thanks",
+        "text": "cool, thanks"
+      },
+      {
+        "intent": "thanks",
+        "text": "cool thank you"
+      },
+      {
+        "intent": "affirm",
+        "entities": [
+          {
+            "start": 4,
+            "end": 7,
+            "value": "yes",
+            "entity": "response"
+          }
+        ],
+        "text": "yes yes"
+      },
+      {
+        "intent": "affirm",
+        "entities": [
+          {
+            "start": 9,
+            "end": 12,
+            "value": "yes",
+            "entity": "response"
+          }
+        ],
+        "text": "yes sure yes"
+      },
+      {
+        "intent": "affirm",
+        "entities": [
+          {
+            "start": 11,
+            "end": 14,
+            "value": "yes",
+            "entity": "response"
+          }
+        ],
+        "text": "absolutely yes"
+      },
+      {
+        "intent": "affirm",
+        "entities": [
+          {
+            "start": 9,
+            "end": 12,
+            "value": "yes",
+            "entity": "response"
+          }
+        ],
+        "text": "for sure yes"
+      },
+      {
+        "intent": "affirm",
+        "entities": [
+          {
+            "start": 12,
+            "end": 15,
+            "value": "yes",
+            "entity": "response"
+          }
+        ],
+        "text": "yes yes yes yes"
+      },
+      {
+        "intent": "affirm",
+        "entities": [
+          {
+            "start": 11,
+            "end": 14,
+            "value": "yes",
+            "entity": "response"
+          }
+        ],
+        "text": "definitely yes"
+      },
+      {
+        "intent": "affirm",
+        "entities": [
+          {
+            "start": 4,
+            "end": 7,
+            "value": "yes",
+            "entity": "response"
+          }
+        ],
+        "text": "yup yes"
+      },
+      {
+        "intent": "affirm",
+        "entities": [
+          {
+            "start": 3,
+            "end": 6,
+            "value": "yes",
+            "entity": "response"
+          }
+        ],
+        "text": "yo yes"
+      },
+      {
+        "intent": "affirm",
+        "entities": [
+          {
+            "start": 5,
+            "end": 8,
+            "value": "yes",
+            "entity": "response"
+          }
+        ],
+        "text": "yeah yes"
+      },
+      {
+        "intent": "affirm",
+        "entities": [
+          {
+            "start": 5,
+            "end": 8,
+            "value": "yes",
+            "entity": "response"
+          }
+        ],
+        "text": "fine yes"
+      },
+      {
+        "intent": "denial",
+        "entities": [
+          {
+            "start": 3,
+            "end": 5,
+            "value": "no",
+            "entity": "response"
+          }
+        ],
+        "text": "no no"
+      },
+      {
+        "intent": "denial",
+        "entities": [
+          {
+            "start": 5,
+            "end": 7,
+            "value": "no",
+            "entity": "response"
+          }
+        ],
+        "text": "nope no"
+      },
+      {
+        "intent": "denial",
+        "entities": [
+          {
+            "start": 2,
+            "end": 4,
+            "value": "no",
+            "entity": "response"
+          }
+        ],
+        "text": "n no"
+      },
+      {
+        "intent": "denial",
+        "entities": [
+          {
+            "start": 3,
+            "end": 5,
+            "value": "no",
+            "entity": "response"
+          }
+        ],
+        "text": "na no"
+      },
+      {
+        "intent": "switch",
+        "entities": [
+          {
+            "start": 10,
+            "end": 73,
+            "value": "Marketing Activities | Design Studio | My Marketo | GlobalLogic",
+            "entity": "switchType"
+          }
+        ],
+        "text": "Switch to Marketing Activities | Design Studio | My Marketo | GlobalLogic"
+      },
+      {
+        "intent": "expire",
+        "entities": [
+          {
+            "start": 8,
+            "end": 42,
+            "value": "assets|smartcampaign|landing pages",
+            "entity": "assetsType"
+          },
+          {
+            "start": 55,
+            "end": 56,
+            "value": "1",
+            "entity": "number"
+          },
+          {
+            "start": 57,
+            "end": 70,
+            "value": "Week|Hour|Day",
+            "entity": "duration"
+          }
+        ],
+        "text": "Give me assets|smartcampaign|landing pages expiring in 1 Week|Hour|Day"
+      },
+      {
+        "intent": "expire",
+        "entities": [
+          {
+            "start": 30,
+            "end": 31,
+            "value": "2",
+            "entity": "number"
+          },
+          {
+            "start": 32,
+            "end": 36,
+            "value": "Week",
+            "entity": "duration"
+          }
+        ],
+        "text": "Do give me assets expiring in 2 Week"
+      },
+      {
+        "intent": "expire",
+        "entities": [
+          {
+            "start": 34,
+            "end": 35,
+            "value": "5",
+            "entity": "number"
+          },
+          {
+            "start": 36,
+            "end": 40,
+            "value": "Week",
+            "entity": "duration"
+          }
+        ],
+        "text": "Please give me assets expiring in 5 Week"
+      },
+      {
+        "intent": "expire",
+        "entities": [
+          {
+            "start": 26,
+            "end": 27,
+            "value": "8",
+            "entity": "number"
+          },
+          {
+            "start": 28,
+            "end": 32,
+            "value": "Week",
+            "entity": "duration"
+          }
+        ],
+        "text": "I want assets expiring in 8 Week"
+      },
+      {
+        "intent": "expire",
+        "entities": [
+          {
+            "start": 33,
+            "end": 35,
+            "value": "16",
+            "entity": "number"
+          },
+          {
+            "start": 36,
+            "end": 40,
+            "value": "Week",
+            "entity": "duration"
+          }
+        ],
+        "text": "I want to get assets expiring in 16 Week"
+      },
+      {
+        "intent": "expire",
+        "entities": [
+          {
+            "start": 29,
+            "end": 31,
+            "value": "24",
+            "entity": "number"
+          },
+          {
+            "start": 32,
+            "end": 36,
+            "value": "Week",
+            "entity": "duration"
+          }
+        ],
+        "text": "Can I get assets expiring in 24 Week"
+      },
+      {
+        "intent": "expire",
+        "entities": [
+          {
+            "start": 42,
+            "end": 44,
+            "value": "30",
+            "entity": "number"
+          },
+          {
+            "start": 45,
+            "end": 49,
+            "value": "Week",
+            "entity": "duration"
+          }
+        ],
+        "text": "Can you help me to get assets expiring in 30 Week"
+      },
+      {
+        "intent": "regex_number",
+        "text": "[0-9]{2}"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": []
+  }
+}
