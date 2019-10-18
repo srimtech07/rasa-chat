@@ -70,17 +70,17 @@
 - na [no](response)
 
 ## intent:switch
-- Switch to [Marketing Activities | Design Studio | My Marketo | GlobalLogic](switchType)
-<!-- - Switch please to [Marketing Activities](switchType)
-- Switch [Marketing Activities](switchType)
-- [Marketing Activities](switchType) switch please
+- Switch to [Marketing Activities](switchType)
+- Switch please to [Marketing Activities](switchType)
+- Switch [Design Studio](switchType)
+- [My Marketo](switchType) switch please
 - Switch to [Marketing Activities](switchType) please
-- I want to switch to [Marketing Activities](switchType)
-- Can you switch to [Marketing Activities](switchType)
-- Please switch to [Marketing Activities](switchType)
-- [Marketing Activities](switchType) switch
+- I want to switch to [My Marketo](switchType)
+- Can you switch to [Design Studio](switchType)
+- Please switch to [My Marketo](switchType)
+- [Design Studio](switchType) switch
 - Do switch to [Marketing Activities](switchType)
-- Make switch to [Marketing Activities](switchType) -->
+- Make switch to [My Marketo](switchType)
 <!-- - Switch to [Design Studio](switchType)
 - Switch please to [Design Studio](switchType)
 - Switch [Design Studio](switchType)
@@ -105,13 +105,24 @@
 - Make switch to [My Marketo](switchType) -->
 
 ##intent:expire
-- Give me [assets|smartcampaign|landing pages](assetsType) expiring in [1](number) [Week|Hour|Day](duration)
-- Do give me assets expiring in [2](number) [Week](duration)
+- Give me [assets](assetsType) expiring in [1](number) [Week](duration)
+- Do give me [Landing Pages](assetsType) expiring in [2](number) [Hour](duration)
+- Do give me [assets](assetsType) expiring in [2](number) [Week](duration)
+- Please give me [assets](assetsType) expiring in [5](number) [Day](duration)
+- I want [assets](assetsType) expiring in [8](number) [Week](duration)
+- I want to get [Landing Pages](assetsType) expiring in [16](number) [Day](duration)
+- Can I get [assets](assetsType) expiring in [24](number) [Week](duration)
+- Can you help me to get [Landing Pages](assetsType) expiring in [30](number) [Day](duration)
+- Give me [smart campaign](assetsType) expiring in [3](number) [Day](duration)
+- I want [smart campaign](assetsType) expiring in [8](number) [Week](duration)
+- Please give me [smart campaign](assetsType) expiring in [5](number) [Hour](duration)
+
+<!-- - Do give me assets expiring in [2](number) [Week](duration)
 - Please give me assets expiring in [5](number) [Week](duration)
 - I want assets expiring in [8](number) [Week](duration)
 - I want to get assets expiring in [16](number) [Week](duration)
 - Can I get assets expiring in [24](number) [Week](duration)
-- Can you help me to get assets expiring in [30](number) [Week](duration)
+- Can you help me to get assets expiring in [30](number) [Week](duration) -->
 <!-- - Give me assets expiring in [1](number) [Day](duration)
 - Do give me assets expiring in [2](number) [Day](duration)
 - Please give me assets expiring in [5](number) [Day](duration)
