@@ -14,56 +14,9 @@
 
 
 ## story_switch_01
-* switch{"switchType":switchType}
-  <!-- - utter_affirm_switch -->
-  <!-- * affirm{"response":"yes"} -->
-  <!-- - action_reset_slot -->
-  - utter_switch
-
-
-<!-- ## story_switch_01_1
-* switch{"switchType":"Marketing Activities"}
-  - utter_affirm_switch
-  * denial{"response":"no"}
-    - action_reset_slot
-    - utter_cancel_switch -->
-
-<!-- ## story_switch_02
-* switch{"switchType":"Design Studio"}
-  - utter_switch
-  * affirm{"response":"yes"}
-    - utter_switch
-    - action_reset_slot
-
-## story_switch_02_1
-* switch{"switchType":"Design Studio"}
-  - utter_switch
-  * denial{"response":"no"}
-    - utter_cancel_switch
-    - action_reset_slot
-
-## story_switch_03
-* switch{"switchType":"My Marketo"}
-  - utter_switch
-  * affirm{"response":"yes"}
-    - utter_switch
-    - action_reset_slot
-
-## story_switch_03_1
-* switch{"switchType":"My Marketo"}
-  - utter_switch
-  * denial{"response":"no"}
-    - utter_cancel_switch
-    - action_reset_slot -->
+* switch
+ - utter_switch
 
 ## story_expiry_04
-* expire{"duration":"week"}
-  - utter_expire
-
-## story_expiry_05
-* expire{"duration":"day"}
-  - utter_expire
-
-## story_expiry_06
-* expire{"duration":"hour"}
+* expire
   - utter_expire
