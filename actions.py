@@ -26,14 +26,3 @@ class ActionJoke(Action):
         joke = request["value"]  # extract a joke from returned json response
         dispatcher.utter_message(joke)  # send the message back to the user
         return []
-
-
-class ActionResetSlot(Action):
-    def name(self):
-        # define the name of the action which can then be included in training stories
-        return "action_reset_slot"
-
-    def run(self, dispatcher, tracker, domain):
-        SlotSet("response", "")
-        SlotSet("switchType", "")
-        return []
